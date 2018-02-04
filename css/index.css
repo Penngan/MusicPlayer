@@ -1,0 +1,126 @@
+.wraper {
+    border: 1px solid #f2f2f2;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 15px 28px 182px -7px rgba(141,204,252,0.55);
+
+}
+.bg {
+    margin: 0 auto;
+    width: 270px;
+    height: 270px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 6px solid rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 34px -6px rgba(252,189,237,1);
+    overflow: hidden;
+}
+.bg img {
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+}
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+.content .title {
+    font-size: 20px;
+    color: #333;
+}
+.content .author {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.progress {
+    margin: 0 auto;
+    padding: 0 20px 10px;
+    text-align: center;
+}
+.volume {
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.volume .iconfont {
+    color: #eaeefc;
+    font-size: 20px;
+}
+
+.volume .voice-control {
+    display: none;
+    height: 60px;
+    width: 3px;
+    position: absolute;
+    background: #eaeefc;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.volume .voice-now {
+    height: 80%;
+    width: 3px;
+    background: #E388DD;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,-100%)
+}
+.progress .bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 28px);
+    cursor: pointer;
+    padding: 5px 2px;
+}
+.bar .bar-total {
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background: #eaeefc;
+}
+.bar-total .bar-now {
+    background: #E388DD;
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 34px -6px rgba(252,189,237,1);
+}
+.musictime {
+    padding: 0 25px;
+    text-align: right;
+}
+.musictime p {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+}
+.control {
+    padding: 0 30px;
+    text-align: center;
+}
+.control span {
+    margin: 10px;
+}
+.control .iconfont {
+    font-size: 30px;
+    vertical-align: middle;
+    color: #cad2ed;
+    cursor: pointer;
+}
+.control .iconfont.icon-play,.control .iconfont.icon-pause {
+    font-size: 50px;
+}
+.control .iconfont:hover {
+    color: #cad2ed;
+    opacity: 0.8;
+}
