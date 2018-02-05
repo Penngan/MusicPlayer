@@ -26,6 +26,7 @@
     opacity: 0.8;
 }
 .content {
+    height: 57px;
     margin-top: 20px;
     text-align: center;
 }
@@ -56,24 +57,38 @@
 
 .volume .voice-control {
     display: none;
+    width: 8px;
     height: 60px;
-    width: 3px;
     position: absolute;
-    background: #eaeefc;
     top: -60px;
     left: 50%;
     transform: translateX(-50%)
 }
+.volume .voice-total {
+    margin-left: 2.5px;
+    width: 3px;
+    background: #eaeefc;
+    height: 100%;
+    position: relative;
+}
 .volume .voice-now {
-    height: 80%;
+    margin-left: 2.5px;
+    height: 100%;
     width: 3px;
     background: #E388DD;
+    transform: translateY(-100%)
+}
+.voice-control::after {
+    content: '';
+    height: 60px;
+    width: 8px;
     position: absolute;
     top: 60px;
-    left: 50%;
-    transform: translate(-50%,-100%)
+    left: 0; 
+    transform: translateY(-60px)
 }
 .progress .bar {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     width: calc(100% - 28px);
@@ -88,7 +103,7 @@
 }
 .bar-total .bar-now {
     background: #E388DD;
-    width: 50%;
+    width: 80%;
     height: 3px;
     position: absolute;
     top: 0;
