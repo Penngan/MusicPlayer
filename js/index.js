@@ -38,6 +38,15 @@ function loadMusic(musicObj){
     $('.content .author').innerText = musicObj.auther
     $('.bg img').src = musicObj.img
     audio.src = musicObj.src
+    if(audio.paused){
+        audio.play()
+        $('.play .iconfont').classList.remove('icon-play')
+        $('.play .iconfont').classList.add('icon-pause')
+    }else{
+        audio.pause()
+        $('.play .iconfont').classList.remove('icon-pause')
+        $('.play .iconfont').classList.add('icon-play')
+    }
 }
 audio.ontimeupdate = function(){
     $('.bar .bar-now').style.width = (this.currentTime/this.duration)*100 + '%'
